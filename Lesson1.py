@@ -18,5 +18,3 @@ print(f'Method Chaining:\n {repr(dc_location.upper().strip())}')
 '''
 
 #Exercise 3 - Extracting Information from a string
-somevar ="test"
-anothervar= "wow"
