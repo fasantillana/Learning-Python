@@ -1,4 +1,4 @@
-'''#Exercise 1 - IP Table
+#Exercise 1 - IP Table
 sf_gw1 = "172.31.255.1/24"
 sf_gw2 = input('what is your gw2 IP address?:\n>')
 headerline = '-' * 20
@@ -15,6 +15,6 @@ print('strip off whitespace:')
 print(f'before: {repr(dc_location)}')
 print(f'after: {repr(dc_location.strip())}')
 print(f'Method Chaining:\n {repr(dc_location.upper().strip())}')
-'''
+
 
 #Exercise 3 - Extracting Information from a string
