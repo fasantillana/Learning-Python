@@ -35,12 +35,12 @@ print(f'there are {hosts} available hosts in your given subnet')
 # b
 print(f'the first network number is {base_addr}{net1} \nThe second network starts at {base_addr}{net2}')
 #c
-print(f'the first host address of the first subnet is {base_addr}{net1 + octet[1]} \n the last available host address is {base_addr}{net2 - 2}')
+print(f'the first host address of the first subnet is {base_addr}{net1 + octet[1]} \n the last available host address of the first subnet is {base_addr}{net2 - 2}\n')
 
 #Implementing a Loop to show all network subnet numbers
-
-while net1 < octet:
-    print(net1)
+print('The subnet networks are:\n')
+while net1 < octet[255]:
+    print(f" {base_addr}{net1}")
     net1 = net1 + bitlist[borrowed_bits - 1]
     
 
