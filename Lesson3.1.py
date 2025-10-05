@@ -30,18 +30,18 @@ bitlist = [128, 64, 32, 16, 8, 4, 2, 1]
 octet = list(range(256))#created a list containing 0-255 in case I need it later on. 
 net1 = octet[0]
 net2 = net1 + bitlist[borrowed_bits - 1]
+# a
 print(f'there are {hosts} available hosts in your given subnet')
+# b
 print(f'the first network number is {base_addr}{net1} \nThe second network starts at {base_addr}{net2}')
+#c
 print(f'the first host address of the first subnet is {base_addr}{net1 + octet[1]} \n the last available host address is {base_addr}{net2 - 2}')
 
-#Implementing a Loop Instead
+#Implementing a Loop to show all network subnet numbers
 
-print(subnets)
-portions = octet % subnets 
-while portions 
+while net1 < octet:
+    print(net1)
+    net1 = net1 + bitlist[borrowed_bits - 1]
+    
 
-
-while hosts < octet:
-    for x in 
-    print(net1 + bitlist[borrowed_bits - 1])
 
